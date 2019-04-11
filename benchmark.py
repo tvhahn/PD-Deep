@@ -49,43 +49,43 @@ def normalizer(a, min_val, max_val):
 # Load Pickles
 
 # all_train
-pickle_in = open("all_train_mean_NOSCALE.pickle", "rb")
+pickle_in = open("data/processed/all_train_mean_NOSCALE.pickle", "rb")
 X_all = pickle.load(pickle_in)
 
 # df_extra1
-pickle_in = open("df_extra1_mean_NOSCALE.pickle", "rb")
+pickle_in = open("data/processed/df_extra1_mean_NOSCALE.pickle", "rb")
 X_extra1 = pickle.load(pickle_in)
 
 # df_extra2
-pickle_in = open("df_extra2_mean_NOSCALE.pickle", "rb")
+pickle_in = open("data/processed/df_extra2_mean_NOSCALE.pickle", "rb")
 X_extra2 = pickle.load(pickle_in)
 
 # df_extra3
-pickle_in = open("df_extra3_mean_NOSCALE.pickle", "rb")
+pickle_in = open("data/processed/df_extra3_mean_NOSCALE.pickle", "rb")
 X_extra3 = pickle.load(pickle_in)
 
 # X_train
-pickle_in = open("X_train.pickle", "rb")
+pickle_in = open("data/processed/X_train.pickle", "rb")
 X_train = pickle.load(pickle_in)
 
 # X_val
-pickle_in = open("X_val.pickle", "rb")
+pickle_in = open("data/processed/X_val.pickle", "rb")
 X_val = pickle.load(pickle_in)
 
 # X_test
-pickle_in = open("X_test.pickle", "rb")
+pickle_in = open("data/processed/X_test.pickle", "rb")
 X_test = pickle.load(pickle_in)
 
 # y_train
-pickle_in = open("y_train.pickle", "rb")
+pickle_in = open("data/processed/y_train.pickle", "rb")
 y_train = pickle.load(pickle_in)
 
 # y_val
-pickle_in = open("y_val.pickle", "rb")
+pickle_in = open("data/processed/y_val.pickle", "rb")
 y_val = pickle.load(pickle_in)
 
 # y_test
-pickle_in = open("y_test.pickle", "rb")
+pickle_in = open("data/processed/y_test.pickle", "rb")
 y_test = pickle.load(pickle_in)
 
 X_all = np.concatenate((X_all, X_extra1, X_extra2, X_extra3), axis=0)
